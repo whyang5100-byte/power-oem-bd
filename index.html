@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="施耐德OEM业务相关全国及地区行业动态月报。">
+  <title>OEM行业动态月报｜2026年9月</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233dcd58'/%3E%3Cpath d='M17 41V23h10c6 0 10 3 10 9s-4 9-10 9H17zm7-6h3c2 0 4-1 4-3s-2-3-4-3h-3v6zm16 6V23h7v18h-7z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="返回顶部">
+      <span class="brand-mark">OE</span>
+      <span>OEM Intelligence</span>
+    </a>
+    <span class="edition">2026年9月刊</span>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">MONTHLY MARKET WATCH · 2026.09</p>
+        <h1>OEM行业动态月报</h1>
+        <p class="lede">聚合全国行业趋势与重点地区动态，围绕设备制造、自动化、电气系统及工业数字化，提炼对OEM业务有参考价值的市场信号。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="downloads/oem-national-2026-09.xlsx" download="工作簿1_全国行业动态_2026年9月.xlsx">下载全国行业动态</a>
+          <a class="button secondary" href="downloads/oem-regional-2026-09.xlsx" download="工作簿2_地区行业动态_2026年9月.xlsx">下载地区行业动态</a>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <span class="pulse"><i></i> 本月数据已更新</span>
+        <div class="month">09<span>/ 2026</span></div>
+        <p>更新于 2026年9月24日</p>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="月报统计">
+      <div><strong id="totalCount">257</strong><span>条动态</span></div>
+      <div><strong id="nationalCount">101</strong><span>全国行业</span></div>
+      <div><strong id="regionalCount">156</strong><span>地区动态</span></div>
+      <div><strong id="categoryCount">—</strong><span>行业 / 省份</span></div>
+    </section>
+
+    <section class="explorer">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">NEWS EXPLORER</p>
+          <h2>本月动态</h2>
+        </div>
+        <div class="tabs" role="tablist" aria-label="动态类型">
+          <button class="tab active" type="button" role="tab" aria-selected="true" data-kind="national">全国行业动态</button>
+          <button class="tab" type="button" role="tab" aria-selected="false" data-kind="regional">地区行业动态</button>
+        </div>
+      </div>
+
+      <div class="filters">
+        <label class="search-wrap">
+          <span class="sr-only">搜索动态</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.4-4.4m2.4-5.1a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+          <input id="searchInput" type="search" placeholder="搜索标题、摘要、OEM机会…">
+        </label>
+        <label>
+          <span class="sr-only" id="categoryLabel">选择细分行业</span>
+          <select id="categoryFilter" aria-labelledby="categoryLabel"><option value="">全部细分行业</option></select>
+        </label>
+        <label>
+          <span class="sr-only">排序方式</span>
+          <select id="sortFilter">
+            <option value="sheet">按表格顺序</option>
+            <option value="newest">按发布时间</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="result-bar">
+        <p>共找到 <strong id="resultCount">0</strong> 条相关动态</p>
+        <button id="clearFilters" type="button">清除筛选</button>
+      </div>
+      <div id="newsList" class="news-list" aria-live="polite"></div>
+      <div class="load-row"><button id="loadMore" class="button secondary" type="button">加载更多</button></div>
+    </section>
+
+    <section class="method">
+      <p class="eyebrow">EDITORIAL NOTE</p>
+      <h2>如何阅读这份月报</h2>
+      <div class="method-grid">
+        <article><span>01</span><h3>动态概述</h3><p>保留项目规模、政策方向、技术路线与企业动作，让读者快速理解新闻本身。</p></article>
+        <article><span>02</span><h3>OEM业务关联</h3><p>从配电、自动化、控制、数字化与设备集成角度，提炼可跟进的业务机会。</p></article>
+        <article><span>03</span><h3>出处可追溯</h3><p>每条动态均显示来源、发布时间和原文入口，便于进一步核实与内部分享。</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>OEM行业动态月报 · 信息来源以原文为准</p><a href="#top">返回顶部 ↑</a></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
