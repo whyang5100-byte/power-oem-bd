@@ -182,7 +182,7 @@ function refreshEdition(){
  $(".hero-panel p").textContent="数据截至 "+state.month+(m===10?"-25":"-24");
  $(".hero-copy .eyebrow").textContent="MONTHLY MARKET WATCH · "+state.month.replace("-",".");
  $(".section-head p:last-child").textContent=m===10?"仅收录10月发布的信息；全国与地区分开统计，同一事件可在两个视角出现。":"9月历史资料，保留原始内容供回查。";
- document.querySelectorAll(".hero-actions a").forEach(a=>{const kind=a.dataset.kind,ext="docx";a.href="downloads/oem-"+kind+"-"+state.month+"."+ext;a.download=(kind==="national"?"全国行业动态_":"地区行业动态_")+state.month+"."+ext;a.hidden=m!==10});
+ document.querySelectorAll(".hero-actions a").forEach(a=>{const kind=a.dataset.kind,ext="docx";a.href="downloads/oem-"+kind+"-"+state.month+"."+ext;a.download=(kind==="national"?"全国行业动态_":"地区行业动态_")+state.month+"."+ext;a.hidden=false});
  loadData();
 }
 $("#monthFilter").addEventListener("change",e=>{state.month=e.target.value;state.category="";state.selected.clear();state.limit=12;refreshEdition()});
